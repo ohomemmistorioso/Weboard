@@ -64,7 +64,7 @@ class WebBoardImeService : InputMethodService() {
         }
         val addressRow = LinearLayout(this).apply { orientation = LinearLayout.HORIZONTAL }
         address = EditText(this).apply {
-            singleLine = true
+            setSingleLine(true)
             textSize = 14f
             hint = "Digite um site ou pesquise"
             setTextColor(Color.WHITE)
